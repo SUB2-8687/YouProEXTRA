@@ -1,15 +1,12 @@
-# YTLitePlusEXTRA
-This is a fork repo from YTLite,but add more tweaks similar to YTLitePlus for who can't build IPA or The app is unusable.
-If you have any problems, feel free to open issues!
+# YouProEXTRA
 
-  ## YouProEXTRA
-YouPro tweak provided by [@Alibusut](https://t.me/alibusut)
+YouPro 0.1 tweak provided by [@Alibusut](https://t.me/alibusut)
 
   ### NOTE: Restart after first launch to fix UI issues
   
 ## Main features
 - [YouPro](https://t.me/alibusut) - eg. Download Videos, No ads, Background Playback
-- [YTUHD](https://github.com/PoomSmart/YTUHD) - Enables 4K streaming with 60pHDR capability 
+- [YTUHD](https://github.com/Tonwalter888/YTUHD) - Enables 4K streaming with 60pHDR capability 
 - [YouMute](https://github.com/PoomSmart/YouMute) - Mute the video sounds in video overlay
 - [YouSpeed](https://github.com/PoomSmart/YouSpeed) - Change video speeds in video overlay
 - [YTABConfig](https://github.com/PoomSmart/YTABConfig) - Configures A/B settings
@@ -46,6 +43,6 @@ YouPro tweak provided by [@Alibusut](https://t.me/alibusut)
 ## Supported YouTube version
 <ul>
    <li><strong>Latest confirmed:</strong> 21.17.3</li>
-   <li><strong>Date tested:</strong> Apr 27, 2026</li>
+   <li><strong>Date tested:</strong> Apr 28, 2026</li>
    <li><strong>YouPro:</strong> 0.1</li>
 </ul>
