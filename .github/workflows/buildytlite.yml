@@ -181,12 +181,12 @@ jobs:
 
       - name: Clone and Build YTLite
         run: |
-          git clone --quiet --depth=1 https://github.com/mrdrvt99/YTLiteP.git
-          cd YTLiteP
-          echo "YTLiteP_VERSION=$(grep '^Version:' DEBIAN/control | awk '{print $2}')" >> $GITHUB_ENV
+          git clone --quiet --depth=1 https://github.com/mrdrvt99/YTL.git
+          cd YTL
+          echo "YTL_VERSION=$(grep '^Version:' DEBIAN/control | awk '{print $2}')" >> $GITHUB_ENV
           chmod -R 755 .
-          dpkg-deb --root-owner-group -Zgzip --build . ../YTLiteP.deb
-          mv ../YTLiteP.deb ${{ github.workspace }}/YTLiteP.deb
+          dpkg-deb --root-owner-group -Zgzip --build . ../ytlite.deb
+          mv ../ytlite.deb ${{ github.workspace }}/ytlite.deb
 
       - name: Clone and Build YouPiP
         if: steps.cache_tweaks.outputs.cache_youpip_hit != 'true'
@@ -350,18 +350,18 @@ jobs:
           for f in *.deb; do
             [ -f "$f" ] && tweaks="$tweaks $f"
           done
-          cyan -i youtube.ipa -o YouTubePlus_${{ env.YT_VERSION }}_${{ env.YTLiteP_VERSION }}.ipa -uwef $tweaks -n "${{ inputs.display_name }}" -b ${{ inputs.bundle_id }}
+          cyan -i youtube.ipa -o YouTubePlus_${{ env.YT_VERSION }}_${{ env.YTL_VERSION }}.ipa -uwef $tweaks -n "${{ inputs.display_name }}" -b ${{ inputs.bundle_id }}
 
       - name: Create a Draft Release
         uses: softprops/action-gh-release@v3
         with:
-          tag_name: ytlitep-ipa${{ github.run_number }}
-          name: YouTubePlus_${{ env.YT_VERSION }}_${{ env.YTLiteP_VERSION }} (${{ github.run_number }})
-          files: YouTubePlus_${{ env.YT_VERSION }}_${{ env.YTLiteP_VERSION }}.ipa
+          tag_name: ytl-ipa${{ github.run_number }}
+          name: YouTubePlus_${{ env.YT_VERSION }}_${{ env.YTL_VERSION }} (${{ github.run_number }})
+          files: YouTubePlus_${{ env.YT_VERSION }}_${{ env.YTL_VERSION }}.ipa
           draft: true
 
       - name: Job Summary - Build Complete
-        run: echo -e '### 🛠️ Build YTLiteP IPA Complete!' >> $GITHUB_STEP_SUMMARY
+        run: echo -e '### 🛠️ Build YTLite IPA Complete!' >> $GITHUB_STEP_SUMMARY
 
       - name: Job Summary - Output the Draft Release Link
         run: |
