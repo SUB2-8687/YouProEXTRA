@@ -61,6 +61,6 @@
 ## Supported YouTube version
 <ul>
    <li><strong>Latest confirmed:</strong> 21.17.3</li>
-   <li><strong>Date tested:</strong> Apr 28, 2026</li>
-   <li><strong>YouPro:</strong> 0.2</li>
+   <li><strong>Date tested:</strong> May 1, 2026</li>
+   <li><strong>YouPro:</strong> 0.3</li>
 </ul>
