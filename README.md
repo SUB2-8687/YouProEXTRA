@@ -2,8 +2,7 @@
 
 ### YouPro tweak provided by [@Alibusut](https://t.me/alibusut)
 
-  #### Updated to beta 3
-  #### NOTE: Restart after first launch to fix UI issues
+  ##### Updated to beta 3
 
 # EDIT: YOU CAN NOW BUILD YTLite 5.2.1 with any YT version.
 
