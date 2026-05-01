@@ -12,7 +12,6 @@
 - [YouMute](https://github.com/PoomSmart/YouMute) - Mute the video sounds in video overlay
 - [YouSpeed](https://github.com/PoomSmart/YouSpeed) - Change video speeds in video overlay
 - [YTABConfig](https://github.com/PoomSmart/YTABConfig) - Configures A/B settings
-- [YouSlider](https://github.com/PoomSmart/YouSlider) - Customizes video slider and scrubber
 - [iSponsorBlock](https://github.com/Galactic-Dev/iSponsorBlock) - Block Sponsorship 
 - [YouChooseQuality](https://github.com/PoomSmart/YouChooseQuality) - Auto select the video quality from your scenario
 - [YouShare](https://github.com/Tonwalter888/YouShare) - Copy video URL faster from video overlay
