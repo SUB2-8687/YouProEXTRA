@@ -240,6 +240,13 @@ jobs:
           cd YouLoop && make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
           mv packages/*.deb ${{ github.workspace }}/youloop.deb
 
+      - name: Clone and Build Alderis
+        if: steps.cache_tweaks.outputs.cache_alderis_hit != 'true'
+        run: |
+          git clone --quiet --depth=1 https://github.com/hbang/Alderis.git
+          cd Alderis && make clean package DEBUG=0 FINALPACKAGE=1 ARCHS=arm64
+          mv packages/*.deb ${{ github.workspace }}/alderis.deb
+
       - name: Clone and Build YouChooseQuality
         if: steps.cache_tweaks.outputs.cache_youchoose_hit != 'true'
         run: |
