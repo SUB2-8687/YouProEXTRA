@@ -35,10 +35,6 @@ inputs:
     required: true
   youloop_commit:
     required: true
-  alderis_commit:
-    required: true
-  youslider_commit:
-    required: true
   youchoose_commit:
     required: true
   ytsilentvote_commit:
@@ -76,8 +72,6 @@ outputs:
   cache_youspeed_hit:      { value: "${{ steps.cache_youspeed.outputs.cache-hit }}" }
   cache_youmute_hit:       { value: "${{ steps.cache_youmute.outputs.cache-hit }}" }
   cache_youloop_hit:       { value: "${{ steps.cache_youloop.outputs.cache-hit }}" }
-  cache_alderis_hit:       { value: "${{ steps.cache_alderis.outputs.cache-hit }}" }
-  cache_youslider_hit:     { value: "${{ steps.cache_youslider.outputs.cache-hit }}" }
   cache_youchoose_hit:     { value: "${{ steps.cache_youchoose.outputs.cache-hit }}" }
   cache_ytsilentvote_hit:  { value: "${{ steps.cache_ytsilentvote.outputs.cache-hit }}" }
   cache_youshare_hit:      { value: "${{ steps.cache_youshare.outputs.cache-hit }}" }
@@ -152,18 +146,6 @@ runs:
       with:
         path: ${{ github.workspace }}/youloop.deb
         key: youloop-${{ inputs.youloop_commit }}-sdk${{ inputs.sdk_version }}
-
-    - uses: actions/cache@v4
-      id: cache_alderis
-      with:
-        path: ${{ github.workspace }}/alderis.deb
-        key: alderis-${{ inputs.alderis_commit }}-sdk${{ inputs.sdk_version }}
-
-    - uses: actions/cache@v4
-      id: cache_youslider
-      with:
-        path: ${{ github.workspace }}/youslider.deb
-        key: youslider-${{ inputs.youslider_commit }}-sdk${{ inputs.sdk_version }}
 
     - uses: actions/cache@v4
       id: cache_youchoose

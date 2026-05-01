@@ -16,9 +16,6 @@ outputs:
   theos:
     description: Theos commit hash
     value: ${{ steps.hashes.outputs.theos }}
-  cyan:
-    description: Cyan commit hash
-    value: ${{ steps.hashes.outputs.cyan }}
   youpip:
     description: YouPiP commit hash
     value: ${{ steps.hashes.outputs.youpip }}
@@ -49,12 +46,6 @@ outputs:
   youloop:
     description: YouLoop commit hash
     value: ${{ steps.hashes.outputs.youloop }}
-  alderis:
-    description: Alderis commit hash
-    value: ${{ steps.hashes.outputs.alderis }}
-  youslider:
-    description: YouSlider commit hash
-    value: ${{ steps.hashes.outputs.youslider }}
   youchoose:
     description: YouChooseQuality commit hash
     value: ${{ steps.hashes.outputs.youchoose }}
@@ -101,7 +92,6 @@ runs:
         }
  
         echo "theos=$(get_hash theos/theos)"                                         >> $GITHUB_OUTPUT
-        echo "cyan=$(get_hash asdfzxcvbn/pyzule-rw)"                                 >> $GITHUB_OUTPUT
         echo "youpip=$(get_hash PoomSmart/YouPiP)"                                   >> $GITHUB_OUTPUT
         echo "ytuhd=$(get_hash Tonwalter888/YTUHD)"                                  >> $GITHUB_OUTPUT
         echo "ryd=$(get_hash PoomSmart/Return-YouTube-Dislikes)"                     >> $GITHUB_OUTPUT
@@ -112,8 +102,6 @@ runs:
         echo "youspeed=$(get_hash PoomSmart/YouSpeed)"                               >> $GITHUB_OUTPUT
         echo "youmute=$(get_hash PoomSmart/YouMute)"                                 >> $GITHUB_OUTPUT
         echo "youloop=$(get_hash bhackel/YouLoop)"                                   >> $GITHUB_OUTPUT
-        echo "alderis=$(get_hash hbang/Alderis)"                                     >> $GITHUB_OUTPUT
-        echo "youslider=$(get_hash PoomSmart/YouSlider)"                             >> $GITHUB_OUTPUT
         echo "youchoose=$(get_hash PoomSmart/YouChooseQuality)"                      >> $GITHUB_OUTPUT
         echo "ytsilentvote=$(get_hash PoomSmart/YTSilentVote)"                       >> $GITHUB_OUTPUT
         echo "youshare=$(get_hash Tonwalter888/YouShare)"                            >> $GITHUB_OUTPUT
