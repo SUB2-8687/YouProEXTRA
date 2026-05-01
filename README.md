@@ -2,10 +2,10 @@
 
 ### YouPro tweak provided by [@Alibusut](https://t.me/alibusut)
 
-  #### Updated to beta 2
+  #### Updated to beta 3
   #### NOTE: Restart after first launch to fix UI issues
 
-# EDIT: YOU CAN NOW BUILD YTLite with any YT version.
+# EDIT: YOU CAN NOW BUILD YTLite 5.2.1 with any YT version.
 
 ## Main features
 - [YouPro](https://t.me/alibusut) - eg. Download Videos, No ads, Background Playback
