@@ -44,6 +44,18 @@ on:
         default: true
         required: false
         type: boolean
+        
+      ythold:
+        description: "Integrate YTHoldForSpeed"
+        default: false
+        required: false
+        type: boolean
+
+      volumeboost:
+        description: "Integrate VolumeBoostYT"
+        default: false
+        required: false
+        type: boolean  
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -56,6 +68,8 @@ jobs:
       isponsorblock: ${{ inputs.isponsorblock }}
       demc: ${{ inputs.demc }}
       ytvid: ${{ inputs.ytvid }}
+      ythold: ${{ inputs.ythold }}
+      volumeboost: ${{ inputs.volumeboost }}
       youpro: false
 
   package:
@@ -75,7 +89,7 @@ jobs:
       - name: Hide Sensitive Inputs
         uses: levibostian/action-hide-sensitive-inputs@v1
         with:
-          exclude_inputs: bundle_id,display_name,demc,ytvid,isponsorblock
+          exclude_inputs: bundle_id,display_name,demc,ytvid,isponsorblock,ythold,volumeboost
 
       - name: Download and Validate IPA
         run: |

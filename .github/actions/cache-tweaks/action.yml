@@ -31,6 +31,12 @@ inputs:
   ytvid:
     required: false
     default: 'false'
+  ythold:
+    required: false
+    default: 'false'
+  volumeboost:
+    required: false
+    default: 'false'
   theos_commit:
     required: true
   youpip_commit:
@@ -92,6 +98,12 @@ inputs:
   ytvid_commit:
     required: false
     default: 'disabled'
+  ythold_commit:
+    required: false
+    default: 'disabled'
+  volumeboost_commit:
+    required: false
+    default: 'disabled'  
 
 outputs:
   cache_youpip_hit:        { value: "${{ steps.cache_youpip.outputs.cache-hit }}" }
@@ -116,6 +128,8 @@ outputs:
   cache_isponsorblock_hit: { value: "${{ steps.cache_isponsorblock.outputs.cache-hit }}" }
   cache_demc_hit:          { value: "${{ steps.cache_demc.outputs.cache-hit }}" }
   cache_ytvid_hit:         { value: "${{ steps.cache_ytvid.outputs.cache-hit }}" }
+  cache_ythold_hit:        { value: "${{ steps.cache_ythold.outputs.cache-hit }}" }
+  cache_volumeboost_hit:   { value: "${{ steps.cache_volumeboost.outputs.cache-hit }}" }
 
 runs:
   using: composite
@@ -261,3 +275,17 @@ runs:
       with:
         path: ${{ github.workspace }}/ytvideoerror.deb
         key: ytvid-${{ inputs.ytvid_commit }}-sdk${{ inputs.sdk_version }}
+        
+    - uses: actions/cache@v4
+      if: inputs.ythold == 'true'
+      id: cache_ythold
+      with:
+        path: ${{ github.workspace }}/ythold.deb
+        key: ythold-${{ inputs.ythold_commit }}-sdk${{ inputs.sdk_version }}
+
+    - uses: actions/cache@v4
+      if: inputs.volumeboost == 'true'
+      id: cache_volumeboost
+      with:
+        path: ${{ github.workspace }}/volumeboost.deb
+        key: volumeboost-${{ inputs.volumeboost_commit }}-sdk${{ inputs.sdk_version }}

@@ -16,6 +16,9 @@ YouTube IPA builder packed with customizable tweaks.
 - [Gonerino](https://github.com/castdrian/Gonerino) - Filter videos/channels/keywords that you don't want them to show up on your feeds
 - [YouGetCaption](https://github.com/PoomSmart/YouGetCaption) - Views and copies caption from YouTube videos. 
 - [YTweaks](https://github.com/fosterbarnes/YTweaks) - Various tweaks for the iOS YouTube app.
+### Experimental features
+- [YTHoldForSpeed](https://github.com/joshuaseltzer/YTHoldForSpeed) - Tap and hold on the YouTube video player to toggle a selected playback speed. (NOTE: Only default settings)
+- [VolumeBoostYT](https://github.com/VasirakCalgux/VolumeBoostYT) - Gesture-based volume control for the YouTube app, completely separate from the system volume. (NOTE: turn off/on tweak again if the audio is not playing)
 
 ## How to build a YouProEXTRA IPA using Github Actions
 > [!NOTE]

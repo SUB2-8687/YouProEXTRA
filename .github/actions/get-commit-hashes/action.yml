@@ -11,6 +11,12 @@ inputs:
   ytvid:
     required: false
     default: 'false'
+  ythold:
+    required: false
+    default: 'false'
+  volumeboost:
+    required: false
+    default: 'false'  
  
 outputs:
   theos:
@@ -82,6 +88,12 @@ outputs:
   ytvid:
     description: YTVideoErrorAlert commit hash
     value: ${{ steps.hashes.outputs.ytvid }}
+  ythold:
+    description: YTHoldForSpeed commit hash
+    value: ${{ steps.hashes.outputs.ythold }}
+  volumeboost:
+    description: VolumeBoostYT commit hash
+    value: ${{ steps.hashes.outputs.volumeboost }}  
  
 runs:
   using: composite
@@ -132,4 +144,15 @@ runs:
         else
           echo "ytvid=disabled"                                                      >> $GITHUB_OUTPUT
         fi
- 
+        
+        if [ "${{ inputs.ythold }}" = "true" ]; then
+          echo "ythold=$(get_hash joshuaseltzer/YTHoldForSpeed)"                     >> $GITHUB_OUTPUT
+        else
+          echo "ythold=disabled"                                                     >> $GITHUB_OUTPUT
+        fi
+
+        if [ "${{ inputs.volumeboost }}" = "true" ]; then
+          echo "volumeboost=$(get_hash VasirakCalgux/VolumeBoostYT)"                 >> $GITHUB_OUTPUT
+        else
+          echo "volumeboost=disabled"                                                >> $GITHUB_OUTPUT
+        fi
