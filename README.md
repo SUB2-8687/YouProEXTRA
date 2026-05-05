@@ -1,6 +1,16 @@
 # YouProEXTRA
 YouTube IPA builder packed with customizable tweaks. Also Known as Youtubemaxxing.
 
+> [!IMPORTANT]
+> ## 🆕 New Feature
+> YouProEXTRA now has an official AltStore/SideStore/Feather source. Install any mod directly on your device and get automatic updates. no building, no decrypted IPAs required.
+> 
+> 
+> Read Instructions here 👉 [mrdrvt99/Altstore-Repository](https://github.com/mrdrvt99/Altstore-Repository)
+> 
+>
+> ⚠️ If you already have one of these tweaks installed from a direct IPA or previous sideload, **do not tap Update**. Delete the installed tweak first, then install fresh from the source.
+
 ## Main features
 - **[YouPro](https://t.me/alibusut)** - Basic Youtube Premium features; Download Videos, No ads, Background Playback.
 - **[YoutubePlus/YTLite](https://github.com/dayanch96/YTLite)** - A flexible enhancer for YouTube on iOS, featuring over hundred customizable options.
