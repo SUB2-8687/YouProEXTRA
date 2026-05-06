@@ -3,7 +3,7 @@ YouTube IPA builder packed with customizable tweaks. Also Known as Youtubemaxxin
 
 > [!IMPORTANT]
 > ## 🆕 New Feature
-> YouProEXTRA now has an official AltStore/SideStore/Feather source. Install any mod directly on your device and get automatic updates. no building, no decrypted IPAs required.
+> YouProEXTRA now has an official AltStore/Esign/Feather/SideStore/LiveContainer source. Install any mod directly on your device and get automatic updates. no building, no decrypted IPAs required.
 >
 > AIO Package and separate source files. links are avaliable below
 > 
